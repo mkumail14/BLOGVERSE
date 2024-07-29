@@ -40,11 +40,10 @@ async function logout() {
     } catch (error) {
         console.error(error);
     }
+    window.location.href='index.html'
 }
 
-async function submitUserDetails(){
 
-}
 
 window.logout = logout;
 window.openLogin=openLogin;
