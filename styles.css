@@ -1,0 +1,185 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.login {
+    background-color: #e4d0d0;
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+    margin-right: 5%;
+}
+
+.signup {
+    background-color: #f39c12;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+.navbar-brand{
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;;
+}
+
+
+
+#navbarSupportedContent{
+    margin-left: 40%;
+}
+
+
+#welcomeBox{
+    font-family: 'Courier New', Courier, monospace;
+    border-top: 1px solid black;
+    padding-top: 3%;
+    font-size: 40px;
+    padding-bottom: 3%;
+
+}
+
+#main{
+    padding-left: 5%;
+    font-family: 'Courier New', Courier, monospace;
+
+
+}
+
+.profilePhoto{
+    border-radius: 50%;
+    width: 20%;
+    padding: 2%;
+}
+
+.userDetails{
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+
+.userBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.userppBox{
+    border-radius: 50%;
+    width: -webkit-fill-available;
+}
+.card{
+    width: 80%;
+    margin: 5%;
+}
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
+    .navbar-brand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .logo h4 {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    .nav-buttons {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-buttons .btn {
+        flex: none;
+        margin: 5px 0;
+        font-size: 14px;
+        padding: 8px;
+        width: 100%;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+    #navbarSupportedContent{
+        margin-left: 0%;
+        margin-top: 10%;
+    }
+    #welcomeBox{
+       font-size: 27px;
+        font-family: 'Courier New', Courier, monospace;
+        border-top: 1px solid black;
+        padding-top: 3%;
+    }
+#focus{
+    flex-direction: column;
+}
+}
+
+
+#loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin-bottom: 130%;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+/* Container styling */
+#uploadYourDetails ,#uploadYourBlog{
+    width: 300px;
+    padding: 20px;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Input fields styling */
+  #input-field,
+  #input-file,#input-BlogTitle,#input-BlogContent {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  /* Button styling */
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #2980b9;
+  }
+  
