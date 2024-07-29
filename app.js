@@ -36,7 +36,6 @@ async function loadBlogs() {
                 let blogData = doc.data()[key];
 
                 if (blogData) {
-                    console.log(doc.id); 
                     let truncatedContent = blogData[1].substring(0, 200);  // Truncate content to 200 characters
                     let temp = `
                         <div class="card">
@@ -77,7 +76,6 @@ async function openBlog(id,key) {
 const docSnap = await getDoc(docRef);
 let blogData = docSnap.data()[key];
 if (docSnap.exists()) {
-  console.log("Document data:", docSnap.data());
   let temp = `
        <a href='index.html'><button  style="
         width: fit-content;
@@ -127,8 +125,7 @@ document.getElementById('focus').style.display='flex'
 }
     document.getElementById('loaderBox').style.display='none'
     document.getElementById('focus').style.display='flex'
-    console.log(id);
-    console.log(key);
+  
 
 }
 
@@ -158,7 +155,7 @@ for (let i = 1; i < 10; i++) {
                 </div>
             </div>
         `;
-console.log("written")
+
         document.getElementById('moreByUser').innerHTML += tempk;
     } else {
         break;
@@ -192,7 +189,6 @@ async function checkUserDetails() {
         const docSnap = await getDoc(docRef);
         
         if (docSnap.exists()) {
-          console.log("User details found:", docSnap.data());
           document.getElementById('main').style.display = 'none';
           document.getElementById('uploadYourBlog').style.display = 'block';
         } else {
