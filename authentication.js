@@ -21,7 +21,7 @@ onAuthStateChanged(auth, (user) => {
         document.getElementById('logInBtn').style.display='none'
     } else {
         document.getElementById('logOutBtn').style.display='none'
-        // document.getElementById('postBtn').style.display='none'
+        document.getElementById('postBtn').style.display='none'
           }
 });
 
