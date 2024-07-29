@@ -197,6 +197,7 @@ async function checkUserDetails() {
           document.getElementById('uploadYourBlog').style.display = 'block';
         } else {
           console.log("No user details found.");
+          document.getElementById('loaderBox').style.display='none'
           document.getElementById('main').style.display = 'none';
           document.getElementById('uploadYourDetails').style.display = 'block';
         }
@@ -250,7 +251,7 @@ async function checkUserDetails() {
             console.log('File available at', downloadURL);
             
             await setDoc(doc(db, "blogverse", localStorage.getItem('MKA-Email')), {
-              name: name,
+              Name: name,
               Profile: downloadURL
             });
             
