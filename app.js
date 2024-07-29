@@ -251,7 +251,7 @@ async function checkUserDetails() {
             
             await setDoc(doc(db, "blogverse", localStorage.getItem('MKA-Email')), {
               name: name,
-              profile: downloadURL
+              Profile: downloadURL
             });
             
             console.log('User details saved successfully.');
